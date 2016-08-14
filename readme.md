@@ -32,3 +32,21 @@ The format of the candles is as follows:
     "ema41":0.000027608722724691292
 }
 ```
+
+## API Usage
+
+```javascript
+const Candlize = require('candlize');
+const conf = {
+    period: 3600,
+    intype: Candlize.BITCOINCHARTS,
+    ema: [8, 32, 41]
+};
+const candalizer = Candlize.create(conf, (out) => {
+    console.log(JSON.stringify(out));
+});
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', candalizer.onData);
+process.stdin.on('end', candalizer.onEnd);
+```
