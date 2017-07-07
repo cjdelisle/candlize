@@ -1,8 +1,8 @@
 {
     "name": "candlize",
     "description": "Take different formats of trade data and unify them into a candlestick format",
-    "version": "0.0.0",
-    "repository": "https://github.com/cjdelisle/candalize.git",
+    "version": "0.0.1",
+    "repository": "https://github.com/cjdelisle/candlize.git",
     "license": "MIT",
     "dependencies": {
         "boxema": "0.0.0"
