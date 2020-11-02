@@ -1,4 +1,7 @@
 # Candlize
+
+Status: stable+unmaintained - open an issue if you would like to take over
+
 Parse different types of trading data into candle format with optional Exponential Moving Average added.
 This script handles inputs in the format from bitcoincharts and in the format from poloniex.
 More formats might be added in the future.
